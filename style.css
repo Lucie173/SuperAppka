@@ -1,0 +1,151 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", "Sans Serif";
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    list-style: none;
+}
+
+.menu li {
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    background-color: #48418e;
+    color: white;
+}
+
+.menu .logo {
+    padding: 1em 2em;
+    color: rgb(38, 29, 73);
+    font-weight: 700;
+}
+
+.banner {
+    position: relative;
+    min-height: 450px;
+    background: url(images/pozadi.jpg), center center no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    color: white;
+}
+
+.titulek {
+    margin: 0;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.podtitulek {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 50px 0;
+    line-height: 1.2;
+}
+
+.tlacitko {
+    display: inline-block;
+    font-size: 20px;
+    padding: 1em 1.5em;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.tlacitko-stahnout {
+    margin-right: 10px;
+    background-color: #48418e;
+    box-shadow: 0 3px 10px (rgb(0, 0, 0, 0.3));
+}
+
+.tlacitko-info {
+    font-weight: 300;
+    box-shadow: 0 3px 10px (rgb(0, 0, 0, 0.3));
+}
+
+.telefon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.obsah {
+    padding: 40px;
+}
+
+.vlastnosti {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sloupec {
+    flex: 0 0 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sloupec h2 {
+    margin: 10px 0;
+    color: #40295e;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ikona {
+    width: 70px;
+    height: auto;
+}
+
+.paticka {
+    padding: 10px 40px;
+    margin: 0;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: #48418e;
+	color: white;
+	text-align: center; 
+}
